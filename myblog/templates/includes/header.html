@@ -1,0 +1,27 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-lg-top">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'blog:home' %}">
+      <img
+        src="{% static 'img/logo.png' %}"
+        width="30"
+        height="30"
+        class="d-inline-block align-top"
+        alt=""
+      />
+      <span style="color: red">Ya</span>tube
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent"
+      aria-controls="navbarContent"
+      aria-expanded="false"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
